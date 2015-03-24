@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:clickable="false">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/personNameInput"
+        android:width="300dp"
+        android:textIsSelectable="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:hint="Name :" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Number"
+        android:id="@+id/addButton"
+        android:layout_marginTop="107dp"
+        android:layout_below="@+id/personNameInput"
+        android:layout_alignLeft="@+id/personNameInput"
+        android:visibility="visible"
+        android:typeface="normal"
+        android:shadowColor="@android:color/background_dark"
+        android:onClick="addButtonClicked" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Number"
+        android:id="@+id/deleteButton"
+        android:layout_alignBottom="@+id/addButton"
+        android:layout_alignRight="@+id/personNameInput"
+        android:onClick="deleteButtonClicked" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/personPhoneNumberInput"
+        android:layout_below="@+id/personNameInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:hint="Phone Number :"
+        android:width="300dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/outputText"
+        android:layout_marginTop="74dp"
+        android:layout_below="@+id/addButton"
+        android:layout_alignLeft="@+id/addButton"
+        android:layout_alignRight="@+id/personPhoneNumberInput"
+        android:width="600dp"
+        android:text="@string/hello"
+        android:textSize="@dimen/Size" />
+</RelativeLayout><!-- From: file:/F:/AndroidStudioProjects/AndroidSQLiteTutorial/app/src/main/res/layout/main.xml -->
